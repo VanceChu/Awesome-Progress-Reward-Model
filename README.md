@@ -1,4 +1,4 @@
-# Awesome-Reward-Model
+# Awesome-Progress-Reward-Model
 
 Robotic reward models are becoming a central interface for long-horizon manipulation, test-time adaptation, failure recovery, and planner-guided control. Their importance comes from learning more than a generic scalar reward: some methods estimate global task completion, some compare short-horizon forward-versus-backward transitions, and newer systems combine dense process rewards with preference, success, or verifier signals. This repository summarizes representative research on robotic reward modeling around the `progress vs delta` question, clarifies the main design landscape, and highlights the broader system interfaces that make these signals useful in practice.
 
