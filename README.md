@@ -243,3 +243,7 @@ This list is intentionally analytical rather than exhaustive.
 - It focuses on robotic reward modeling, not all of RL for Embodied AI.
 - It prioritizes papers that clarify reward semantics, supervision, failure ingestion, or downstream usage.
 - It treats `progress vs delta` as the entry point, not as the full story.
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=VanceChu/Awesome-Progress-Reward-Model&type=Date)](https://www.star-history.com/#VanceChu/Awesome-Progress-Reward-Model&Date)
