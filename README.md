@@ -67,7 +67,7 @@ So even inside `absolute progress`, the real comparison is not just "do they all
 | Method | Title | Venue | Date | Code/Project | High-level labels | Key feature/finding |
 | --- | --- | --- | --- | --- | --- | --- |
 | [ReWiND](https://arxiv.org/abs/2505.10911) | ReWiND: Language-Guided Rewards Teach Robot Policies without New Demonstrations | CoRL 2025 (Oral) | 5/2025 | [Project](https://rewind-reward.github.io/) / [Code](https://github.com/rewind-reward/ReWiND) | `Core · Absolute Progress · Success + Rewind · Shaping + Relabel` | Direct frame-level progress regression with rewind augmentation for reward relabeling and policy improvement. |
-| [SARM](https://arxiv.org/abs/2509.25358) | SARM: Stage-Aware Reward Modeling for Long Horizon Robot Manipulation | Arxiv | 9/2025 | - | `Core · Absolute Progress · Stage-Structured · Shaping + Termination` | Stage-aware absolute-progress modeling instead of naive normalized-time supervision. |
+| [SARM](https://arxiv.org/abs/2509.25358) | SARM: Stage-Aware Reward Modeling for Long Horizon Robot Manipulation | ICLR 2026 (Poster) | 9/2025 | - | `Core · Absolute Progress · Stage-Structured · Shaping + Termination` | Stage-aware absolute-progress modeling instead of naive normalized-time supervision. |
 | [TOPReward](https://arxiv.org/abs/2602.19313) | TOPReward: Token Probabilities as Hidden Zero-Shot Rewards for Robotics | Arxiv | 2/2026 | - | `Core · Absolute Progress · Zero-Shot Completion · Shaping + Eval` | Zero-shot completion belief extracted from token probabilities rather than a separately trained reward head. |
 | [SOLE-R1](https://arxiv.org/abs/2603.28730) | SOLE-R1: Video-Language Reasoning as the Sole Reward for On-Robot Reinforcement Learning | Arxiv | 3/2026 | - | `Core · Absolute Progress · Reasoning Rewarder · Online RL` | Video-language reasoning model predicts dense task progress robust enough to act as the sole reward source for online RL. |
 
@@ -220,13 +220,13 @@ The distinction here is conceptual rather than architectural. `VLS` is useful be
 
 | Method | Title | Venue | Date | Code/Project | High-level labels | Key feature/finding |
 | --- | --- | --- | --- | --- | --- | --- |
-| [VLS](https://arxiv.org/abs/2602.03973) | VLS: Steering Pretrained Robot Policies via Vision-Language Models | Arxiv | 2/2026 | [Project](https://vision-language-steering.github.io/webpage/) | `Support · Stage / Temporal · Stage-Structured · Steering` | Multi-stage reward geometry and policy steering for long-horizon tasks. |
+| [VLS](https://arxiv.org/abs/2602.03973) | VLS: Steering Pretrained Robot Policies via Vision-Language Models | Arxiv | 2/2026 | [Project](https://vision-language-steering.github.io/webpage/) | `Support · Stage / Temporal · Stage-Structured · Steering` | Multi-stage VLM-synthesized programmatic rewards and policy steering for long-horizon tasks. |
 | [Keyframe-Guided Structured Rewards](https://arxiv.org/abs/2603.00719) | Keyframe-Guided Structured Rewards for Reinforcement Learning in Long-Horizon Laboratory Robotics | Arxiv | 3/2026 | - | `Support · Stage / Temporal · Structured Keyframes · Shaping` | Demonstration-derived keyframe milestones are converted into structured stage rewards for long-horizon RL. |
 | [RFTF](https://arxiv.org/abs/2505.19767) | RFTF: Reinforcement Fine-tuning for Embodied Agents with Temporal Feedback | Arxiv | 5/2025 | - | `Support · Stage / Temporal · Temporal Feedback · Shaping` | Temporal and process-oriented intermediate supervision for embodied fine-tuning. |
 
 ### Expanded Notes
 
-- `VLS`: Highlights multi-stage reward geometry and policy steering, reinforcing the claim that long-horizon reward design often benefits from explicit stage structure rather than one flat scalar.
+- `VLS`: Highlights multi-stage VLM-synthesized programmatic rewards and policy steering, reinforcing the claim that long-horizon reward design often benefits from explicit stage structure rather than one flat scalar.
 - `Keyframe-Guided Structured Rewards`: Shows a concrete route from demonstrations to structured stage reward. It is useful because it turns milestone extraction and temporal order into a reward-generation mechanism rather than leaving them as informal intuitions.
 - `RFTF`: Provides direct support for temporal and process-oriented intermediate supervision. Included because it helps justify why dense trajectory-level feedback is worth modeling in the first place.
 
